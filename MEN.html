@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styl.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="womanstyl.css">
+   <title>Document</title>
+ <link rel="stylesheet" href="menstyle.css">
+</head>
+<body>
+   
+
+  <header>
+     <nav>
+        <div class="logo">
+            <a href="home.html" class="shop-name" style=" text-decoration: none;">
+                <h1>Souma<span> NTIC</span></h1>
+            </a>
+        </div>
+        
+        <ul id="menuList">
+            <li><a href="women.html">WOMEN</a></li>
+            <li><a href="MEN.html">MEN</a></li>
+            <li><a href="kids.html">KIDS</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            
+            <div id="carti-icone"><i class="fa-solid fa-cart-shopping"></i></div>
+        </ul>
+        
+        
+        <div class="menu-icon">
+          <i class="fas fa-bars" onclick="toggleMenu()"></i>
+      </div>
+    </nav>
+</header>
+
+
+
+
+
+  
+    <div class="men-main-img">
+      <img src="slider_img/MEN-2.webp" style="max-width: 100%;" alt="...">
+    </div>
+   
+
+
+
+
+
+
+
+<div class="cart-shopping">
+  <h2 class="cart-titel">YOUR Cart</h2>
+  <div class="cart-content">
+     <!--<div class="cart-box">
+        <img src="kids_img/img_1.jpg" alt="cart-img">
+        <div class="cart-detail">
+          <h2 class="cart-product-titel">isem l product</h2>
+          <span class="cart-price">5000.00 €</span>
+          <div class="cart-quantity">
+             <button id="decrement">-</button>
+             <span class="nmbr">1</span>
+             <button id="inecrement">+</button>
+          </div>
+        </div>
+        <i class="fa-solid fa-trash cart-rmov"></i>
+     </div>-->
+  </div>
+  <div class="total">
+    <div class="total-titel">Toutal</div>
+    <div class="total-price">0 €</div>
+  </div>
+  <button class="btn-buy">Buy Now</button>
+  <i class="fa-solid fa-xmark" id="cart-close"></i>
+</div>
+
+<!--product page-->
+   <div class="titel">
+    <h2>Men's Clothes</h2> 
+  <p style="color: #8f8f8f;">Timeless Elegance, Tailored for Success.</p>
+  </div>
+  <div class="container">
+    <form style="padding-bottom: 0px;" class="filter">
+        <div class="item">
+            <label>Category</label>
+            <select name="category">
+                <option value="">---</option>
+                <option value="T-shirt">T-shirt</option>
+                <option value="Shirt">vest</option>
+                <option value="Polo">pants</option>
+            </select>
+        </div>
+        <div class="item">
+            <label>Size</label>
+            <select name="color">
+                <option value="">---</option>
+                <option value="white">S</option>
+                <option value="black">M</option>
+                <option value="grey">L</option>
+                <option value="blue">XL</option>
+                <option value="brown">XXL</option>
+            </select>
+        </div>
+        <div class="item">
+            <label>Name</label>
+            <input name="name" type="text">
+        </div>
+        <div class="item">
+            <label>Min Price</label>
+            <input name="minPrice" type="number">
+        </div>
+        <div class="item">
+            <label>Max Price</label>
+            <input name="maxPrice" type="number">
+        </div>
+        <div class="item submit">
+            <button style="padding-bottom: 10px;padding-top: 10px;">Search</button>
+        </div>
+    </form>
+    <div style="padding-top: 0px; padding-bottom: 0px;" class="countResults">
+         <b id="count"></b> 
+    </div> 
+    <div id="list">
+        
+    </div>
+</div>
+<div class="pro-continer">
+  <div class="pro" >
+    <a href="productdetail1.html"><img src="men-image/men-image1.jpg"></a>
+    <div class="des">
+        <h5 class="prod-titel">Bershka faux leather vintage jacket</h5>
+        <div class="star">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+        </div>
+        <div class="price-and-cart">
+          <span class="pricee">120</span>
+          <span class="ero"> €</span>
+          <i class="fa-solid fa-cart-shopping add-cart"></i>
+        </div>
+    </div>
+    <a href="checkout.html"><button class="buy-now">Buy Now <i class="fa-solid fa-cart-shopping"></i></button></a>
+    
+        <i class="fa-solid fa-cart-shopping add-cart"></i>
+    
+</div>
+
+  <div class="pro" >
+    <img src="men-image/men-image2.jpg" alt="Hoodie Image">
+    <div class="des">
+        <h5  class="prod-titel">Printed Technical Jacket</h5>
+        <div class="star">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+        </div>
+        <h4 class="pricee">80 €</h4>
+    </div>
+    <button class="buy-now">Buy Now <i class="fa-solid fa-cart-shopping"></i></button>
+        <i class="fa-solid fa-cart-shopping add-cart"></i>
+    
+</div>
+
+<div class="pro" >
+  <img src="men-image/men-image3.jpg" alt="Hoodie Image">
+  <div class="des">
+      <h5  class="prod-titel">Oversize Leather Jacket</h5>
+      <div class="star">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+      </div>
+      <h4 class="pricee">250 €</h4>
+  </div>
+  <button class="buy-now">Buy Now <i class="fa-solid fa-cart-shopping"></i></button>
+  <i class="fa-solid fa-cart-shopping add-cart"></i>
+</div>
+
+<div class="pro" >
+  <img src="men-image/men-image4.jpg" alt="Hoodie Image">
+  <div class="des">
+      <h5  class="prod-titel">Bershka Jumper</h5>
+      <div class="star">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+      </div>
+      <h4 class="pricee">35 €</h4>
+  </div>
+  <button class="buy-now">Buy Now <i class="fa-solid fa-cart-shopping"></i></button>
+  <i class="fa-solid fa-cart-shopping add-cart"></i>
+</div>
+
+<div class="pro" >
+  <img src="men-image/men-image5.jpg" alt="Hoodie Image">
+  <div class="des">
+      <h5  class="prod-titel">Bershka Polo Shirt</h5>
+      <div class="star">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+      </div>
+      <h4 class="pricee">40 €</h4>
+  </div>
+  <button class="buy-now">Buy Now <i class="fa-solid fa-cart-shopping"></i></button>
+  <i class="fa-solid fa-cart-shopping add-cart"></i>
+</div>
+<div class="pro" >
+  <img src="men-image/men-image6.jpg" alt="Hoodie Image">
+  <div class="des">
+      <h5  class="prod-titel">Oversized Black Jeans</h5>
+      <div class="star">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+      </div>
+      <h4 class="pricee">90 €</h4>
+  </div>
+  <button class="buy-now">Buy Now <i class="fa-solid fa-cart-shopping"></i></button>
+  <i class="fa-solid fa-cart-shopping add-cart"></i>
+</div>
+
+
+
+</div>
+<section id="for-email" class="section-p1 section-m1">
+  <div class="forem">
+    <h4>Sign Up For New Offers</h4>
+    <p> Get E-mail Updates about our latest shop and <span>NEW Offer</span></p>
+   </div>
+  <div class="form">
+   <a href="login.html"><button class="bt button" style=" margin-left: 300px;"><span>Sign-Up</span></button></a>
+  </div>
+
+</section>
+
+<footer class="section-p1" style="padding: 0px 80px 10px;">
+  <div class="col">
+  
+    <h4>Contant</h4>
+    <p><strong>Addres :</strong>uv17 constantine nouvelle ville</p>
+    <p><strong>Phone :</strong>(+213)555555555</p>
+    <p><strong>Hours :</strong>8:00 - 19:00 / Sat -Thur </p>
+    <div class="follow">
+         <h4>Follow Us</h4>
+        <div class="icon">
+         <a href="#"> <i style="padding: 7px; padding-top: 0px;" class="fa-brands fa-facebook-f"></i></a>
+         <a href="#"> <i style="padding: 7px; padding-top: 0px;" class="fa-brands fa-instagram"></i></a>
+         <a href=""> <i style="padding: 7px; padding-top: 0px;" class="fa-brands fa-tiktok"></i></a>
+        </div>
+    </div>
+  
+  </div>
+ 
+
+  <div class="col">
+    <h4>About</h4>
+    <a href="about.html">About us</a>
+    <a href="#">Delivery Information</a>
+    <a href="#">Terms & Conditions</a>
+    <a href="contact.html">contact Us</a>
+  </div>
+
+  <div class="col">
+    <h4>My Accont</h4>
+    <a href="login.html">Sign in</a>
+    <a href="#">View Cart</a>
+    <a href="#">My Wishlist</a>
+    <a href="help.html">Help</a>
+  </div>
+  <div class="col pay">
+    <p>Secured Payment Gateways</p>
+    <img src="category+homepage/pay (1).png" alt="">
+
+  </div>
+  <div class="copyright">
+    <p>©2025,Baghriche-Mohamed-ALI/Kellil-Rachid-Anis/Hammoudi-Anis-Fares</p>
+  </div>
+</footer>
+
+
+
+<script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+<script src="men.js"></script>
+<script>
+        let menuList = document.getElementById("menuList")
+        menuList.style.maxHeight = "0px";
+
+        function toggleMenu(){
+            if(menuList.style.maxHeight == "0px") {
+                menuList.style.maxHeight = "300px";
+            }
+            else {
+                menuList.style.maxHeight = "0px";
+            }
+        }
+    </script>
+
+
+
+</body>
+</html>

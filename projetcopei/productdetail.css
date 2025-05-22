@@ -1,0 +1,19 @@
+body{
+    font-family: "Montserrat", sans-serif;
+}
+.product-image {
+    max-height: 1200px;
+    width: 80%;
+    object-fit: cover;
+}
+.thumbnail {
+    width: 150px;
+    height: 80px;
+    object-fit: cover;
+    cursor: pointer;
+    opacity: 0.6;
+    transition: opacity 0.3s ease;
+}
+.thumbnail:hover, .thumbnail.active {
+    opacity: 1;
+}

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DAW project</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="styl.css">
+    <link rel="stylesheet" href="kidsstyl.css">
+    <link rel="stylesheet" href="productdetail.css">
+</head>
+<body>
+
+    <header>
+        <nav style="background-color: rgb(241, 241, 241);margin-bottom: 20px; ">
+           
+            <div id="middel-navig">
+               
+               <div id="logo">
+                <a href="home.html"class="shop-name"><h1 style="font-family:'Montserrat', sans-serif;;">Souma<span> NTIC</span></h1> </a>
+               </div>
+               
+              
+                
+               <div style="margin-left: 220px;" id="classification">
+                 <ul>
+                   <li><a href="women.html">WOMEN</a></li>
+                   <li><a href="MEN.html">MEN</a></li>
+                   <li><a href="kids.html">KIDS</a></li>
+                 </ul> 
+                 
+
+               </div>
+
+               
+               
+
+               <div id="middel-navig-right">
+                
+                 <ul> 
+                       
+                   <li><a href="login.html">Login</a></li>
+                   <li><a href="contact.html">Contact</a></li>
+                   
+                  
+                 </ul>
+                 
+
+               </div>
+               <div id="carti-icone"><i class="fa-solid fa-cart-shopping"></i></div> 
+
+           </div>
+           
+        </nav>
+
+    </header>
+
+
+    <div class="container mt-5">
+        <div class="row">
+            <!-- Product Images -->
+            <div class="col-md-6 mb-4">
+                <img src="men-image/men-image1.jpg" alt="Product" class="img-fluid rounded mb-3 product-image" id="mainImage">
+                <div class="d-flex justify-content-between">
+                    <img src="men-image/men-imaged1.jpg" alt="Thumbnail 1" class="thumbnail rounded active" onclick="changeImage(event, this.src)">
+                    <img src="men-image/men-imageds1.jpg" alt="Thumbnail 1" class="thumbnail rounded active" onclick="changeImage(event, this.src)">
+                    <img src="men-image/productdtlmen1.jpg" alt="Thumbnail 1" class="thumbnail rounded active" onclick="changeImage(event, this.src)">
+                    <img src="men-image/productdtlmen2.jpg" alt="Thumbnail 1" class="thumbnail rounded active" onclick="changeImage(event, this.src)">
+                </div>
+            </div>
+    
+            <!-- Product Details -->
+            <div class="col-md-6">
+                <h2 class="mb-3">Nike Tracksuit Set for Kids</h2>
+                <p class="text-muted mb-4">SKU: WH1000XM4</p>
+                
+                <div class="mb-3">
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-half text-warning"></i>
+                    <span class="ms-2">4.5 (120 reviews)</span>
+                </div>
+                <p class="mb-4">Experience premium sound quality and industry-leading noise cancellation with these wireless
+                    headphones. Perfect for music lovers and frequent travelers.</p>
+               
+                <div class="mb-4">
+                    <label for="quantity" class="form-label">Quantity:</label>
+                    <input type="number" class="form-control" id="quantity" value="1" min="1" style="width: 80px;">
+                </div>
+                <button class="btn btn-primary btn-lg mb-3 me-2">
+                        <i class="bi bi-cart-plus"></i> Add to Cart
+                    </button>
+                <button class="btn btn-outline-secondary btn-lg mb-3">
+                        <i class="bi bi-heart"></i> Add to Wishlist
+                    </button>
+                
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function changeImage(event, src) {
+                document.getElementById('mainImage').src = src;
+                document.querySelectorAll('.thumbnail').forEach(thumb => thumb.classList.remove('active'));
+                event.target.classList.add('active');
+            }
+    </script>
+
+</body> 
